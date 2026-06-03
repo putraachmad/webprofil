@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Web Profile</title>
+    <title>Portfolio - Ahmad Sholahuddin Putra</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
@@ -28,7 +28,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('beranda') }}">
@@ -51,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">
-                            <i class="bi bi-briefcase me-1"></i>Portofolio
+                            <i class="bi bi-briefcase me-1"></i>Portfolio
                         </a>
                     </li>
                     <li class="nav-item">
@@ -64,11 +63,57 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main style="margin-top: 80px;">
+    <main style="margin-top: 100px;">
         <div class="container">
-            <h1>Selamat Datang di Portfolio Ahmad Sholahuddin Putra</h1>
-            <p>Saya Ahmad Sholahuddin Putra, fullstack developer dari Jombang yang sedang kuliah di Unhasy. Temukan karya dan layanan saya di sini.</p>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Portofolio</h1>
+                    <p class="lead text-muted">Contoh proyek terbaru dan hasil kerja yang menonjol.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Situs Web Perusahaan</h3>
+                            <p class="card-text text-muted">Desain dan pengembangan website profil perusahaan dengan fitur halaman layanan, galeri, dan form kontak.</p>
+                            <span class="badge bg-primary">Web</span>
+                            <span class="badge bg-secondary">Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplikasi Portofolio</h3>
+                            <p class="card-text text-muted">Aplikasi web responsif untuk menampilkan karya, testimoni, dan detail kontak secara profesional.</p>
+                            <span class="badge bg-primary">UI/UX</span>
+                            <span class="badge bg-secondary">Frontend</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Toko Online</h3>
+                            <p class="card-text text-muted">Platform e-commerce dengan fitur katalog produk, keranjang belanja, dan integrasi pembayaran.</p>
+                            <span class="badge bg-primary">E-commerce</span>
+                            <span class="badge bg-secondary">Backend</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplikasi Mobile</h3>
+                            <p class="card-text text-muted">Prototipe aplikasi mobile yang dirancang untuk meningkatkan pengalaman pelanggan dan interaksi pengguna.</p>
+                            <span class="badge bg-primary">Mobile</span>
+                            <span class="badge bg-secondary">Prototype</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

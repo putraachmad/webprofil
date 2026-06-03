@@ -39,23 +39,23 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('beranda') }}">
+                        <a class="nav-link {{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('beranda') }}">
                             <i class="bi bi-house-door me-1"></i>Beranda
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tentang.saya') }}">
+                        <a class="nav-link {{ request()->routeIs('tentang.saya') ? 'active' : '' }}" href="{{ route('tentang.saya') }}">
                             <i class="bi bi-person me-1"></i>Tentang
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('kontak.saya') }}">
-                            <i class="bi bi-envelope me-1"></i>Kontak
+                        <a class="nav-link {{ request()->routeIs('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">
+                            <i class="bi bi-briefcase me-1"></i>Portofolio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">
-                            <i class="bi bi-box-arrow-in-right me-1"></i>Login
+                        <a class="nav-link {{ request()->routeIs('kontak.saya') ? 'active' : '' }}" href="{{ route('kontak.saya') }}">
+                            <i class="bi bi-envelope me-1"></i>Kontak
                         </a>
                     </li>
                 </ul>

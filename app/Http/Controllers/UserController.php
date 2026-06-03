@@ -11,12 +11,17 @@ class UserController extends Controller
 
     public function tentangSaya()
     {
-        return view('user.tentang saya');
+        return view('user.tentang.saya');
+    }
+
+    public function portfolio()
+    {
+        return view('user.portfolio');
     }
 
     public function kontakSaya()
     {
-        return view('user.kontak saya');
+        return view('user.kontak.saya');
     }
 
     public function login()

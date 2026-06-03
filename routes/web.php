@@ -5,5 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [UserController::class, 'beranda'])->name('beranda');
 Route::get('/tentang-saya', [UserController::class, 'tentangSaya'])->name('tentang.saya');
+Route::get('/portfolio', [UserController::class, 'portfolio'])->name('portfolio');
 Route::get('/kontak-saya', [UserController::class, 'kontakSaya'])->name('kontak.saya');
 Route::get('/login', [UserController::class, 'login'])->name('login');

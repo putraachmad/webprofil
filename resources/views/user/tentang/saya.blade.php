@@ -40,22 +40,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('beranda') }}">
+                        <a class="nav-link {{ request()->routeIs('beranda') ? 'active' : '' }}" href="{{ route('beranda') }}">
                             <i class="bi bi-house-door me-1"></i>Beranda
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('tentang.saya') }}">
+                        <a class="nav-link {{ request()->routeIs('tentang.saya') ? 'active' : '' }}" href="{{ route('tentang.saya') }}">
                             <i class="bi bi-person me-1"></i>Tentang
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <i class="bi bi-briefcase me-1"></i>Portfolio
+                        <a class="nav-link {{ request()->routeIs('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">
+                            <i class="bi bi-briefcase me-1"></i>Portofolio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">
+                        <a class="nav-link {{ request()->routeIs('kontak.saya') ? 'active' : '' }}" href="{{ route('kontak.saya') }}">
                             <i class="bi bi-envelope me-1"></i>Kontak
                         </a>
                     </li>
@@ -80,7 +80,7 @@
                         <div class="card-body p-5">
                             <h3 class="mb-4">Siapa Saya?</h3>
                             <p class="text-muted">
-                                Saya adalah Ahmad Sholahuddin Putra, seorang profesional yang berkomitmen untuk memberikan layanan terbaik dalam bidang pengembangan web dan desain grafis. Dengan pengalaman bertahun-tahun, saya siap membantu Anda membangun kehadiran digital yang kuat.
+                                Saya adalah Ahmad Sholahuddin Putra, lahir di Jombang dan sedang menempuh studi di Universitas Hasyim Asy'ari (Unhasy). Saya bekerja sebagai fullstack developer dengan fokus membangun aplikasi web profesional yang responsif dan user-friendly.
                             </p>
                             <hr class="my-4">
                             <h3 class="mb-4">Visi Saya</h3>
